@@ -1,0 +1,8 @@
+in_path = '/home/gerry/Desktop/hash/a_example.in'
+
+file = open(in_path, 'r')
+lines = list(file)
+
+R, C, F, N, B, T = [int(x) for x in lines[0].split(' ')]
+for n, l in enumerate(lines[1:N]):
+    a, b, x, y, s, f = [int(tmp) for tmp in l.split(' ')]
